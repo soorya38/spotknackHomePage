@@ -1,3 +1,5 @@
+import './index.css';
+
 function TopBar() {
     const content = [
         "Home",
@@ -23,7 +25,7 @@ function TopBar() {
 
 function LoginButton() {
     return (
-        <button className='login-btn'>Login</button>
+        <button className="login-btn" style={{ backgroundColor: 'orangered' }}>Login</button>
     );
 }
 

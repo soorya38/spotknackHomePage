@@ -9,6 +9,9 @@ function App() {
     <>
       <TopBar />
       <MainContent />
+      <HighlightFeatures />
+      <WhySpotknack />
+      <Footer />
     </>
   );
 }
