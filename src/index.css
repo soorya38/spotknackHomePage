@@ -1,9 +1,11 @@
 body {
   background-color: #FAF1ED;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/*top-bar start*/
-
+/* Top-bar styles */
 .topbar-content {
   list-style: none;
   display: flex;
@@ -31,25 +33,19 @@ body {
   padding: 10px;
 }
 
+/* Responsive top-bar */
 @media (max-width: 768px) {
   .topbar-content {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 65%;
+    margin-right: 20px;
   }
   
   .topbar-items {
     margin-bottom: 10px;
     margin-right: 10px;
-    justify-content: center;
   }
 
-  .login-btn {
-    margin-top: -8px;
-  }
-
+  .login-btn,
   .logo {
     margin-top: -8px;
   }
@@ -57,38 +53,26 @@ body {
 
 @media (max-width: 480px) {
   .topbar-content {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 40%;
   }
   
   .topbar-items {
     margin-bottom: 10px;
     margin-right: 10px;
-    justify-content: center;
   }
 
-  .login-btn {
-    margin-top: -8px;
-  }
-
+  .login-btn,
   .logo {
     margin-top: -8px;
   }
 }
 
-/*top-bar end*/
-
-/*Heighlight features*/
+/* Highlight features */
 .outer-container-features {
   background-color: white;
-  height: auto; 
   min-height: 325px;
   border-radius: 10px;
-  margin-left: 20px;
-  margin-right: 20px; 
+  margin: 20px;
 }
 
 .features {
@@ -114,7 +98,6 @@ body {
   .headline {
     margin-top: 30px;
     margin-right: 20px;
-    text-align: center;
   }
 
   .headlineImage {
@@ -123,7 +106,7 @@ body {
   }
 
   .features {
-    min-height: 400px; 
+    min-height: 400px;
   }
 }
 
@@ -131,7 +114,6 @@ body {
   .headline {
     margin-top: 20px;
     margin-right: 10px;
-    text-align: center;
     margin-left: 10px; 
   }
 
@@ -145,6 +127,7 @@ body {
   }
 }
 
+/* Left and right sides */
 .left-side {
   width: 50%;
   padding-left: 20px;
@@ -153,4 +136,99 @@ body {
 .right-side {
   margin-left: 50%;
   margin-top: -19vh;
+}
+
+.inner-container-right {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 15vh;
+}
+
+.inner-value {
+  margin: 0;
+}
+
+.text {
+  font-size: 200%;
+  padding-right: 15vh;
+}
+
+/* Responsive components */
+.left-component,
+.right-component {
+  background-color: white;
+  min-height: 200px; /* Use min-height instead of fixed height */
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 20px; /* Add padding to ensure content has space */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.left-component {
+  width: 47%;
+  margin-left: 20px;
+}
+
+.right-component {
+  width: 49%;
+  margin-left: 50%;
+  margin-top: -265px;
+}
+
+.components {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.t {
+  text-align: left;
+  margin-right: 5vh;
+  padding: 5vh;
+}
+
+.tr {
+  font-size: 150%;
+  text-align: left;
+  margin-right: 3vh;
+  padding: 5vh;
+}
+
+/* Adjust background for responsiveness */
+@media (max-width: 1024px) {
+  body {
+    background-color: #F2E9E1;
+  }
+  
+  .left-component,
+  .right-component {
+    width: 100%; /* Ensure components take full width */
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: #E8D8D1;
+  }
+  
+  .left-component,
+  .right-component {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-color: #DFC6BA;
+  }
+  
+  .left-component,
+  .right-component {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
