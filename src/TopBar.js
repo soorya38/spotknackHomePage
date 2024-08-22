@@ -25,7 +25,7 @@ function TopBar() {
 
 function LoginButton() {
     return (
-        <button className="login-btn" style={{ backgroundColor: 'orangered' }}>Login</button>
+        <button className="login-btn" style={{ backgroundColor: '#FF5722' }}>Login</button>
     );
 }
 

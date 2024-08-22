@@ -1,0 +1,77 @@
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #FAF1ED;
+    gap: 30px;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 500px;
+    margin-top: -50px;
+    margin-left: 15%;
+}
+
+.text-content h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.text-content p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.email-register {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.email-register input {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 12px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.email-register button {
+    background-color: #FF5722;
+    color: white;
+    /* padding: 15px 25px; */
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.email-register button:hover {
+    background-color: #E64A19;
+}
+
+.image-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.image-content .image {
+    max-width: 100%;
+}
+
+.image-content .whatsapp-image {
+    grid-column: span 2;
+    max-height: 400px;
+}
+
+.middle-page {
+    margin-left: 50%;
+}

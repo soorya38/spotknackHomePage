@@ -1,7 +1,6 @@
 function Components() {
     return (
         <>
-            <br />
             <div className="components">
                 <LeftComponent />
                 <RightComponent />
