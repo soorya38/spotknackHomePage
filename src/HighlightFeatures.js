@@ -1,4 +1,4 @@
-import badgeImage from './images/badgeImage.jpg';
+import badgeImage from './images/badgeImage.png';
 
 function HighlightFeatures() {
     return (
@@ -6,20 +6,22 @@ function HighlightFeatures() {
             <div className='outer-container-features'>
                 <h2 className='hf-title' style={{padding: '20px'}}>Highlight Features</h2>
                 <div className='features'>
-                    <Headline />
-                    <Headline />
-                    <Headline />
-                    <Headline />
+                    <Headline color={'#FFCC45'}/>
+                    <Headline color={'#34B2FE'}/>
+                    <Headline color={'#3365FF'}/>
+                    <Headline color={'#F7641F'}/>
                 </div>
             </div>
         </>
     );
 }
 
-function Headline() {
+function Headline({ color }) {
     return (
         <div className='headline'>
-            <img src={badgeImage} className='headlineImage' />
+            <div className='iii' style={{backgroundColor: color}}>
+                <img src={badgeImage} className='headlineImage'  />
+            </div>
             <p>headline</p>
         </div>
     );

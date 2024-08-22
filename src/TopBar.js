@@ -1,4 +1,5 @@
 import './index.css';
+import logo from './images/logo.png';
 
 function TopBar() {
     const content = [
@@ -31,7 +32,9 @@ function LoginButton() {
 
 function Logo() {
     return (
-        <h1>Spotknack</h1>
+        <div className="logo">
+            <img src={logo} alt="Logo" className="logo-image" />
+        </div>
     );
 }
 

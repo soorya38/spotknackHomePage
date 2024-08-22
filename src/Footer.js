@@ -1,3 +1,5 @@
+import logo from './images/logo.png';
+
 function Footer() {
     return (
         <>
@@ -47,8 +49,7 @@ function Footer() {
 function Logo() {
     return (
         <div className="logo">
-            <img src="logo.png" alt="Logo" className="logo-image" />
-            <h1 className="logo-text">spotknack</h1>
+            <img src={logo} alt="Logo" className="logo-image" />
         </div>
     );
 }

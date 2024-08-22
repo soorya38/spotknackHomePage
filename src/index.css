@@ -5,6 +5,10 @@ body {
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 /* Top-bar styles */
 .topbar-content {
   list-style: none;
@@ -87,11 +91,20 @@ body {
 .headline {
   margin-right: 40px;
   margin-top: -40px;
+  height: 180px;
+  width: 170px;
+}
+
+.iii {
+  height: 180px;
+  width: 170px;
+  /* background-color: aqua; */
+  justify-content: center;
+  border-radius: 10px;
 }
 
 .headlineImage {
-  height: 170px;
-  width: 170px;
+  margin-top: 25px;
 }
 
 @media (max-width: 768px) {
@@ -135,7 +148,7 @@ body {
 
 .right-side {
   margin-left: 50%;
-  margin-top: -19vh;
+  margin-top: -24vh;
 }
 
 .inner-container-right {
@@ -171,8 +184,9 @@ body {
 
 .right-component {
   width: 49%;
+  height: 315px;
   margin-left: 50%;
-  margin-top: -265px;
+  margin-top: -310px;
 }
 
 .components {

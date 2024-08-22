@@ -18,7 +18,7 @@ function MainContent() {
                     <img src={phone2} alt="Phone" />
                 </div>
             </div>
-            <div className="image-content">
+            <div className="image-content" style={{marginTop: '-70px'}}>
                 <img src={whatsapp} alt="WhatsApp" className='whatsapp-image' style={{marginLeft: '40px'}}/>
                 <div style={{marginLeft: '333px', marginTop: '-23px'}}>
                     <img src={phone1} alt="Phone"/>

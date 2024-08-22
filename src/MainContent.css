@@ -9,13 +9,13 @@
 
 .text-content {
     flex: 1;
-    max-width: 500px;
+    max-width: 700px;
     margin-top: -50px;
     margin-left: 15%;
 }
 
 .text-content h1 {
-    font-size: 48px;
+    font-size: 38px;
     line-height: 1.2;
     margin-bottom: 20px;
     color: #000;
@@ -74,4 +74,9 @@
 
 .middle-page {
     margin-left: 50%;
+}
+
+.logo-image {
+    width: 200px;
+    height: 110%;
 }
